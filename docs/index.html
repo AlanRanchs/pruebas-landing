@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tlatec - Soluciones Digitales</title>
+    <meta name="description"
+        content="Impulsa tu negocio con Teteocan. Soluciones digitales integrales desde paquetes gratuitos hasta servicios completos de transformación digital">
+    <link rel="icon" href="assets/images/LogoTlatec.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles_v4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script_v12.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+
+                <nav class="nav-desktop">
+                    <div class="logo-area">
+
+                        <img src="assets/images/LogoTlatec.png" alt="Logo" class="logo-icon" id="logo-desktop" />
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#package" class="boton-nav">PAQUETES</a></li>
+                        <li><a href="#contacto" class="boton-nav">CONTACTO</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Header -->
+                <div class="mobile-header">
+                    <div class="mobile-header">
+
+                        <button class="mobile-menu-btn" id="mobileMenuBtn">
+                            <i class="fas fa-bars" id="menuIcon"></i>
+                        </button>
+                        <div class="mobile-logo-area">
+                            <img src="assets/images/LogoTlatec.png" alt="Logo" class="mobile-logo-icon"
+                                id="logo-mobile" />
+                        </div>
+                        <div class="mobile-spacer"></div>
+                    </div>
+                </div> <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+                <nav class="nav-mobile" id="mobileNav">
+                    <div class="nav-mobile-content">
+                        <div class="mobile-nav-logo-area">
+                            <img src="assets/images/LogoTlatec.png" alt="Logo" class="mobile-nav-logo"
+                                id="logo-mobile-nav" />
+                        </div>
+                        <div class="mobile-nav-links">
+                            <a href="#package" class="boton-nav-paquete">Paquetes</a>
+                            <a href="#contacto" class="boton-nav">Contacto</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    IMPULSA TU NEGOCIO CON
+                    <span class="hero-title-highlight">TLATEC</span>
+                </h1>
+                <p class="hero-description">
+                    IMPULSA EL CRECIMIENTO DE TU NEGOCIO CON NUESTRAS SOLUCIONES DIGITALES
+                    INTEGRALES, DESDE PAQUETES DE INICIO GRATUITOS HASTA UNA TRANSFORMACIÓN
+                    DIGITAL COMPLETA.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon feature-icon-blue">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="feature-title">RÁPIDO Y EFICIENTE</h3>
+                    </div>
+                    <p class="feature-description">
+                        IMPLEMENTACIÓN INMEDIATA DE SOLUCIONES DIGITALES QUE GENERAN RESULTADOS DESDE EL PRIMER DÍA.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon feature-icon-blue">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title"> SEGURO Y CONFIABLE</h3>
+                    </div>
+                    <p class="feature-description"> TECNOLOGÍAS ROBUSTAS Y SEGURAS QUE PROTEGEN TU INFORMACIÓN Y LA
+                        DE TUS CLIENTES.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <div class="feature-icon feature-icon-blue">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="feature-title">ESCALABLE</h3>
+                    </div>
+                    <p class="feature-description"> CRECE CON TU NEGOCIO NUESTROS PAQUETES SE ADAPTAN A TUS
+                        NECESIDADES EN CADA ETAPA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="package" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="hero-title-highlight">PAQUETES</span> QUE CRECEN CONTIGO</h2>
+                <p class="section-description">
+                    DESDE EMPRENDEDORES HASTA GRANDES EMPRESAS, TENEMOS EL PLAN PERFECTO PARA TU NEGOCIO
+                </p>
+            </div>
+            <div class="subscription-switch">
+                <span class="switch-option">Mensual</span>
+                <label class="switch">
+                    <input type="checkbox" id="toggleSubscriptionType" />
+                    <span class="slider round"></span>
+                </label>
+                <span class="switch-option">Anual</span>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card" data-package-id="explorador" data-package-name="PAQUETE EXPLORADOR"
+                    data-package-price="0">
+                    <div class="pricing-header">
+                        <div class="header-top">
+                            <div class="plan-badge plan-badge-blue">Basico</div>
+                            <h3 class="plan-title">PAQUETE <span class="line-break">EXPLORADOR</span></h3>
+                           <span class="price-before-group" data-before-mensual="$199/mes"
+                                data-before-anual="$299/12 meses">$199/mes</span>
+                            <div class="plan-price">
+                                <span class="price-amount">$0</span>
+                                <span class="price-period">/mes</span>
+                            </div>
+                        </div>
+                        <p class="plan-description-explorador">DA EL PRIMER PASO</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="features-list collapsed">
+                            <li class="feature-item" data-title="App para gestión de negocio"
+                                data-description="Aplicación para gestionar tu negocio, limitado a  registro de 10 items">
+                                <i class="fa-solid fa-tablet feature-check-explorador"></i>
+                                <span>App para gestión</span>
+                            </li>
+                            <li class="feature-item" data-title="1 dashboard automático"
+                                data-description="Visualización interactiva de métricas clave del negocio en un panel digital sencillo. Actualización automática mensual.">
+                                <i class="fas fa-chart-bar feature-check-explorador"></i>
+                                <span>1 dashboard</span>
+                            </li>
+                            <li class="feature-item" data-title="1 imagen default para redes sociales"
+                                data-description="Imagen genérica para redes sociales, listos para publicar.">
+                                <i class="fas fa-image feature-check-explorador"></i>
+                                <span>1 imagen RRSS</span>
+                            </li>
+                            <li class="feature-item" data-title="Demo de pagina web tipo landing"
+                                data-description="Vista previa visual de un pagina web tipo landing page, ideal para mostrar servicios o productos.">
+                                <i class="fas fa-globe feature-check-explorador"></i>
+                                <span>Demo de pagina web tipo landing</span>
+                            </li>
+                            <li class="feature-item" data-title="1 dashboard automático"
+                                data-description="Visualización interactiva de métricas clave del negocio en un panel digital sencillo. Actualización automática quincenal.">
+                                <i class="fas fa-chart-bar feature-check-explorador"></i>
+                                <span>1 analisis automatico</span>
+                            </li>
+                            <li class="feature-item" data-title="QR vinculado a menú o tiendas"
+                                data-description="Generación de un código QR personalizado que redirige a tu menú digital o tienda en línea, facilitando el acceso para tus clientes.">
+                                <i class="fa-solid fa-qrcode feature-check-explorador"></i>
+                                <span>QR vinculado a menú o tiendas</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <button type="button" class="btnConfirmSubscription btn-outline">SELECT EXPLORADOR</button>
+                    </div>
+                    <div class="sold-out-overlay">
+                        <img src="assets/images/soldout.webp" alt="Agotado" class="sold-out-stamp">
+                        <span id="soldOutTooltip" class="sold-out-tooltip"></span>
+                    </div>
+                </div>
+                <div class="pricing-card" data-package-id="impulso" data-package-name="PAQUETE IMPULSO">
+                    <div class="pricing-header">
+                        <div class="header-top">
+                            <h3 class="plan-title">PAQUETE<span class="line-break">IMPULSO</span></h3>
+
+                            <span class="price-before-group" data-before-mensual="$499/mes"
+                                data-before-anual="$5,988/12 meses">$359/mes</span>
+
+                            <div class="plan-price">
+                                <span class="price-amount">$299</span>
+                                <span class="price-period">/mes</span>
+                            </div>
+                        </div>
+
+                        <p class="plan-description-impulso">ACELERA TU PRESENCIA DIGITAL</p>
+                    </div>
+                    <div class="pricing-body">
+
+                        <ul class="features-list">
+                            <li class="feature-item" data-title="Paquete Explorador +"
+                                data-description="Incluye los servicios más básicos más algunos complementos avanzados para comenzar con datos.">
+                                <i class="fas fa-gem feature-check-impulso"></i>
+                                <span><b>Paquete Explorador +</b></span>
+                            </li>
+                            <li class="feature-item" data-title="App para gestión de negocio"
+                                data-description="Aplicación para gestionar tu negocio, limitado a registro de 100 items">
+                                <i class="fa-solid fa-tablet feature-check-impulso"></i>
+                                <span>App para gestión</span>
+                            </li>
+                            <li class="feature-item" data-title="2 dashboards"
+                                data-description="Te entregamos dos paneles visuales para que veas y analices tus datos de manera clara.">
+                                <i class="fas fa-chart-pie feature-check-impulso"></i>
+                                <span>3 dashboards</span>
+                            </li>
+
+                            <li class="feature-item" data-title="Sitio web profesional express"
+                                data-description="Desarrollo rápido de un sitio web profesional básico para tu negocio, dominio y hosting incluidos.">
+                                <i class="fas fa-globe feature-check-impulso"></i>
+                                <span>Sitio web profesional</span>
+                            </li>
+                            <li class="feature-item" data-title="Guía de uso"
+                                data-description="Guía de uso sencilla para que puedas aprovechar al máximo todas las herramientas y servicios (video tutorial corto + documento .pdf).">
+                                <i class="fas fa-book feature-check-impulso"></i>
+                                <span>Guía de uso</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <button type="button" class="btnConfirmSubscription btn-primary">SELECT IMPULSO</button>
+                    </div>
+                </div>
+                <div class="pricing-card" data-package-id="dominio" data-package-name="PAQUETE DOMINIO"
+                    data-package-price="359">
+                    <div class="pricing-header">
+                        <div class="header-top">
+                            <h3 class="plan-title">PAQUETE <span class="line-break">DOMINIO</span></h3>
+
+                            <span class="price-before-group" data-before-mensual="$799/mes"
+                                data-before-anual="$9,588/12 meses">$359/mes</span>
+
+                            <div class="plan-price">
+                                <span class="price-amount">$359</span>
+                                <span class="price-period">/mes</span>
+                            </div>
+                        </div>
+                        <p class="plan-description-dominio">PROFESIONALIZA TU MARCA</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="features-list collapsed">
+                            <li class="feature-item" data-title="Paquete impulso +"
+                                data-description="Incluye todas las herramientas del Paquete impulso más funcionalidades adicionales para potenciar tu negocio.">
+                                <i class="fas fa-gem feature-check-dominio"></i>
+                                <span><b>Paquete impulso +</b></span>
+                            </li>
+                            <li class="feature-item" data-title="App para gestión de negocio"
+                                data-description="Aplicación para gestionar tu negocio, limitado a registro de 250 items">
+                                <i class="fa-solid fa-tablet feature-check-dominio"></i>
+                                <span>App para gestión</span>
+                            </li>
+                            <li class="feature-item" data-title="1 dashboard"
+                                data-description="1 dashboard adicional (en total 3) para visualizar tus datos clave en un panel interactivo y fácil de entender.">
+                                <i class="fas fa-chart-pie feature-check-dominio"></i>
+                                <span>4 dashboard</span>
+                            </li>
+                            <li class="feature-item" data-title="4 imágenes mensuales para redes sociales"
+                                data-description="Diseños gráficos personalizados para redes sociales, listos para publicar.">
+                                <i class="fas fa-image feature-check-dominio"></i>
+                                <span>4 imágenes mensuales rrss</span>
+                            </li>
+                            <li class="feature-item" data-title="Panel drive"
+                                data-description="Acceso exclusivo a una carpeta en Google Drive con tus archivos, reportes y recursos.">
+                                <i class="fas fa-cloud feature-check-dominio"></i>
+                                <span>Panel drive</span>
+                            </li>
+                            <li class="feature-item" data-title="Análisis mensual ejecutivo profesional"
+                                data-description="Informe detallado de desempeño mensual con recomendaciones estratégicas.">
+                                <i class="fa-solid fa-chart-line feature-check-dominio"></i>
+                                <span>Informe ejecutivo profesional</span>
+                            </li>
+                            <li class="feature-item" data-title="Calendario de redes sociales"
+                                data-description="Sugerencias de contenido mensual para redes sociales, con fechas y temas sugeridos.">
+                                <i class="fa-solid fa-calendar-days feature-check-dominio"></i>
+                                <span>Calendario de redes sociales</span>
+                            </li>
+                            <li class="feature-item" data-title="Bienvenida para tus clientes"
+                                data-description="Mensaje o diseño de bienvenida profesional para crear una buena primera impresión.">
+                                <i class="fa-solid fa-door-open feature-check-dominio"></i>
+                                <span>Bienvenida para tus clientes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <button type="button" class="btnConfirmSubscription btn-outline">SELECT DOMINIO</button>
+                    </div>
+                </div>
+
+                <div class="pricing-card pricing-card-popular" data-package-id="titan" data-package-name="PAQUETE TITAN"
+                    data-package-price="399">
+                    <div class="pricing-header">
+                        <div class="header-top">
+                            <div class="plan-badge plan-badge-blue">Premium</div>
+                            <h3 class="plan-title">PAQUETE <span class="line-break">TITAN</span></h3>
+
+                            <span class="price-before-group" data-before-mensual="$1499/mes"
+                                data-before-anual="$17,988/12 meses">$359/mes</span>
+
+                            <div class="plan-price">
+                                <span class="price-amount">$399</span>
+                                <span class="price-period">/mes</span>
+                            </div>
+                        </div>
+                        <p class="plan-description-titan">CONQUISTA TU MERCADO</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="features-list more-items">
+                            <li class="feature-item" data-title="Paquete dominio+"
+                                data-description="Incluye todas las herramientas del Paquete dominio más funcionalidades adicionales para potenciar tu negocio.">
+                                <i class="fas fa-gem feature-check-titan"></i>
+                                <span><b>Paquete dominio +</b></span>
+                            </li>
+                            <li class="feature-item" data-title="App para gestión de negocio"
+                                data-description="Aplicación para gestionar tu negocio, registro ilimitado">
+                                <i class="fa-solid fa-tablet feature-check-titan"></i>
+                                <span>App para gestión</span>
+                            </li>
+                            <li class="feature-item" data-title="2 dashboards avanzados"
+                                data-description="2 dashboards adicionales (en total 5) para visualizar tus datos clave en un panel interactivo y fácil de entender.">
+                                <i class="fas fa-chart-pie feature-check-titan"></i>
+                                <span>6 dashboards</span>
+                            </li>
+                            <li class="feature-item" data-title="Certificado digital validado"
+                                data-description="Certificado SSL o digital validado por Teteocan Technologies mejora la seguridad y credibilidad de tu plataforma.">
+                                <i class="fas fa-certificate feature-check-titan"></i>
+                                <span>Certificado digital validado</span>
+                            </li>
+                            <li class="feature-item" data-title="Catálogo editable para WhatsApp y redes sociales"
+                                data-description="Catálogo visual editable y profesional para tus productos o servicios, optimizado para redes sociales.">
+                                <i class="fas fa-book-open feature-check-titan"></i>
+                                <span>Catálogo editable para WhatsApp y redes sociales</span>
+                            </li>
+                            <li class="feature-item" data-title="Asesoría por WhatsApp"
+                                data-description="Comunicación directa y personalizada con nuestros expertos para resolver tus dudas en tiempo real.">
+                                <i class="fab fa-whatsapp feature-check-titan"></i>
+                                <span>Asesoría por WhatsApp</span>
+                            </li>
+                            <li class="feature-item" data-title="Configuración y ajuste de Google Business"
+                                data-description="Optimización de tu perfil de Google Business para mejorar tu visibilidad en búsquedas locales.">
+                                <i class="fa-brands fa-google feature-check-titan"></i>
+                                <span>Configuración y ajuste de Google Business</span>
+                            </li>
+                            <li class="feature-item" data-title="Scraping de 100 registros de potenciales clientes"
+                                data-description="Extracción de datos de 100 registros de clientes potenciales relevantes para tu negocio, utilizando técnicas avanzadas de scraping.">
+                                <i class="fa-solid fa-magnifying-glass-dollar feature-check-titan"></i>
+                                <span>Scraping de 100 registros de potenciales clientes"</span>
+                            </li>
+                            <li class="feature-item" data-title="Encuesta de satisfacción"
+                                data-description="Recopilación de retroalimentación de tus clientes para mejorar tus servicios y productos.">
+                                <i class="fa-solid fa-clipboard-question feature-check-titan"></i>
+                                <span>Encuesta de satisfacción"</span>
+                            </li>
+                            <li class="feature-item" data-title="Prompt profesional para GPT asistente de negocios"
+                                data-description="Desarrollo de un prompt optimizado para utilizar con GPT como asistente de negocios, mejorando la interacción y respuestas.">
+                                <i class="fa-solid fa-robot feature-check-titan"></i>
+                                <span>Prompt profesional para GPT asistente de negocios</span>
+                            </li>
+                            <li class="feature-item" data-title="Reporte mensual de ventas"
+                                data-description="Análisis detallado de tus ventas mensuales con recomendaciones estratégicas.">
+                                <i class="fa-solid fa-magnifying-glass-chart feature-check-titan"></i>
+                                <span>Reporte de ventas</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <button type="button" class="btnConfirmSubscription btn-outline">SELECT TITAN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="modalIcon"></div>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeConfirmModal">&times;</span>
+            <h2>CONFIRMAR COMPRA</h2>
+            <p>ESTÁS A PUNTO DE ADQUIRIR</p>
+            <h3 id="confirmPackageName"></h3>
+            <p>POR UN PRECIO DE: <strong id="confirmPackagePrice"></strong></p>
+
+            <!-- Resumen de servicios incluidos -->
+            <div id="confirmPackageSummary" class="package-summary">
+                <h4>SERVICIOS INCLUIDOS:</h4>
+                <ul id="servicesList">
+                    <!-- Inserción automatica -->
+                </ul>
+            </div>
+
+            <button id="toggleExtrasBtn" class="btn-tertiary">➕ AÑADIR SERVICIOS EXTRA</button>
+            <form id="extraServicesForm">
+                <h4 id="extraServicesTitle">SERVICIOS EXTRA:</h4>
+
+                <label>
+                    <input type="checkbox" name="extras" value="scraping" data-price="1000">
+                    <i class="extra fa-solid fa-location-dot"></i>
+                    SCRAPING POR SLOTS (Google Maps) — <span class="extra-price"> / 500 REGISTROS</span>
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="extras" value="basededatos" data-price="1000">
+                    <i class="fa-solid fa-database"></i>
+                    BASES DE DATOS LISTAS — <span class="extra-price"> / 500 REGISTROS</span>
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="extras" value="negocios" data-price="999">
+                    <i class="fa-solid fa-briefcase"></i>
+                    ASESORÍA DE NEGOCIOS — <span class="extra-price"></span>
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="extras" value="tpv" data-price="1500">
+                    <i class="fa-solid fa-credit-card"></i>
+                    TPV — <span class="extra-price"></span>
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="extras" value="logotipo" data-price="3999">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    DISEÑO DE LOGOTIPO — <span class="extra-price"></span>
+                </label>
+            </form>
+
+            <p>¿DESEAS CONTINUAR CON LA SUSCRIPCIÓN?</p>
+            <div class="modal-actions">
+                <button id="btnConfirmPurchase" class="btn-primary">CONFIRMAR SUSCRIPCIÓN</button>
+                <button id="btnCancelPurchase" class="btn-secondary">CANCELAR</button>
+            </div>
+        </div>
+    </div>
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">COMPARATIVA DE PAQUETES</h2>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>CARACTERÍSTICAS</th>
+                            <th>EXPLORADOR</th>
+                            <th>IMPULSO</th>
+                            <th>DOMINIO</th>
+                            <th>TITAN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>APP DE GESTIÓN</td>
+                            <td>10 items</td>
+                            <td>100 items</td>
+                            <td>250 items</td>
+                            <td>ilimitados</td>
+                        </tr>
+                        <tr>
+                            <td>DASHBOARDS INCLUIDOS</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>ANÁLISIS AUTOMÁTICO</td>
+                            <td>1/MES</td>
+                            <td>1/QUINCENAL</td>
+                            <td>1/SEMANAL</td>
+                            <td>1/SEMANAL</td>
+                        </tr>
+                        <tr>
+                            <td>IMÁGENES PARA RRSS</td>
+                            <td>1 GENÉRICA</td>
+                            <td>1 GENÉRICA</td>
+                            <td>4/MES</td>
+                            <td>4/MES</td>
+                        </tr>
+                        <tr>
+                            <td>SITIO WEB PROFESIONAL</td>
+                            <td>DEMO (CANVA)</td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>QR VINCULADO</td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>GUÍA DE USO</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>BIENVENIDA PARA TUS CLIENTES</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>PANEL DRIVE CLIENTE</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>CALENDARIO DE RRSS</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>INFORME EJECUTIVO</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>CERTIFICADO DIGITAL VALIDADO</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>CATÁLOGO PRO EDITABLE PARA RSS</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>ASESORÍA WHATSAPP</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>SCRAPING 100 DATOS</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>ENCUESTA DE SATISFACCIÓN</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>PROMPT ASISTENTE GPT</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>REPORTE DE VENTAS</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>AJUSTE GOOGLE BUSSINES</td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-times table-cross"></i></td>
+                            <td><i class="fas fa-check table-check"></i></td>
+                        </tr>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">¿LISTO PARA TRANSFORMAR TU NEGOCIO?</h2>
+                    <p class="contact-description">
+                        CONTÁCTANOS HOY MISMO Y DESCUBRE CÓMO PODEMOS
+                        IMPULSAR TU EMPRESA AL SIGUIENTE NIVEL. NUESTRO EQUIPO DE
+                        EXPERTOS ESTÁ LISTO PARA AYUDARTE.
+                    </p>
+                    <div class="contact-features">
+                        <div class="contact-feature">
+                            <i class="fas fa-clock contact-feature-icon"></i>
+                            <span>RESPUESTA EN MENOS DE 24 HORAS</span>
+                        </div>
+                        <div class="contact-feature">
+                            <i class="fas fa-users contact-feature-icon"></i>
+                            <span>CONSULTA GRATUITA CON EXPERTOS</span>
+                        </div>
+                        <div class="contact-feature">
+                            <i class="fas fa-rocket contact-feature-icon"></i>
+                            <span> IMPLEMENTACIÓN RÁPIDA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <div class="logo-area">
+                                <img src="assets/images/logo-teteocan.png" alt="Logo" class="logo-icon-footer"
+                                    title="Desarrollado por: Teteocan Technologies" />
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            TRANSFORMANDO NEGOCIOS A
+                            TRAVÉS DESOLUCIONES DIGITALES
+                            INNOVADORAS Y ESCALABLES.
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 class="footer-title">PAQUETES</h4>
+                            <ul class="footer-list">
+                                <li><a href="#package" class="footer-link">EXPLORADOR</a></li>
+                                <li><a href="#package" class="footer-link">IMPULSO</a></li>
+                                <li><a href="#package" class="footer-link">DOMINIO</a></li>
+                                <li><a href="#package" class="footer-link">TITAN</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-title">CONTACTO</h4>
+                            <ul class="footer-list">
+                                <li><a href="#" class="footer-link">
+                                        <i class="icon-footer fas fa-map-marker-alt"></i>
+                                        <span> CUAUTITLÁN IZCALLI, ESTADO DE MÉXICO, MÉXICO</span>
+                                    </a></li>
+                                <li><a href="#" class="footer-link" class="envelope">
+                                        <i class="email fas fa-envelope"></i>
+                                        <span> CONTACTO@TETEOCAN.COM</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Teteocan Technologies. Todos los derechos reservados.</p>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="https://teteocan.com/politica-privacidad/" class="footer-link">Política de
+                                    Privacidad</a>
+                            </li>
+                            <li>
+                                <a href="terminos_y_condiciones/terms.html" class="footer-link">Términos y
+                                    Condiciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-floating">
+        <button class="whatsapp-btn" id="whatsappBtn">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+        <div class="headset-float">
+            <i class="fas fa-headset"></i>
+            <span class="headset-text">¡Hola!</span>
+        </div>
+    </div>
+
+</html>
