@@ -22,15 +22,16 @@ const PORT = process.env.PORT || 3000;
 //permitir CORS (solicitudes desde otros dominios)
 app.use(cors());
 
-//parsear JSON en las solicitudes entrantes
+// IMPORTANTE: La ruta del webhook debe ir ANTES del middleware express.json()
+// para que el body llegue como raw buffer y no como objeto parseado
+app.use('/api/webhook', express.raw({type: 'application/json'}), webhookRoutes);
+
+//parsear JSON en las solicitudes entrantes (después del webhook)
 app.use(express.json());
 
 // Rutas principales: 
 // '/api/pagos' -> para crear suscripciones y pagos
-app.use('/api/pagos', pagosRoutes);  
-
-// '/api/webhook' -> para recibir notificaciones webhook de Stripe
-app.use('/api/webhook', express.raw({type: 'application/json'}), webhookRoutes);
+app.use('/api/pagos', pagosRoutes);
 
 app.use('/api/precios', preciosRouter);
 
