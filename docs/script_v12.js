@@ -841,9 +841,8 @@ btnConfirmPurchase?.addEventListener("click", async () => {
 
     if (esConSuscripcion || tieneExtrasConCosto) {
       orderData.monto = finalPrice;
-      // Paquete con suscripción O gratuito con extras (requiere pago)
-      const res = await fetch(
-        "https://pruebas-landing.onrender.com/api/pagos/suscripcion ",
+      // Paquete con suscripción O gratuito con extras (requiere pago)      const res = await fetch(
+        "https://pruebas-landing.onrender.com/api/pagos/suscripcion",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
